@@ -1,12 +1,36 @@
-# Byte-compiled / optimized / DLL files
+# Python bytecode
 __pycache__/
 *.py[cod]
 
-# Virtual environment
+# Virtual environments
 .venv/
-.idea/
+env/
+venv/
 
-# Django stuff:
+# IDE/Editor
+.idea/
+.vscode/
+
+# Logs and databases
+*.log
 *.sqlite3
-db.sqlite3
+
+# dotenv files
 .env
+
+# Static files (если собираешь статику в отдельную папку)
+staticfiles/
+
+# OS файлы
+.DS_Store
+Thumbs.db
+
+# Docker override
+docker-compose.override.yml
+
+# Build dirs
+build/
+dist/
+*.egg
+*.egg-info/
+*.eggs/

@@ -1,0 +1,30 @@
+# Игнорируем Python кеш и компиляцию
+__pycache__/
+*.py[cod]
+
+# Виртуальное окружение не кладём в образ
+.venv/
+
+# Файл с секретами, чтобы не попасть в образ
+.env
+
+# SQLite база (если используешь в проде другую БД, то её не надо класть в образ)
+*.sqlite3
+db.sqlite3
+
+# IDE и системные файлы
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Логи и временные файлы
+*.log
+
+# Сборки и пакеты
+*.egg-info/
+build/
+dist/
+
+# Docker compose override, если есть, не нужно в образ
+docker-compose.override.yml
